@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elevate</title>
+  <!-- google material icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css?v=<?php echo time();?>">
+<body>
+  <div class="container" style="grid-template-columns: 14rem auto;">
+    <aside>
+      <div class="top">
+        <div class="logo">
+          <img src="main-logo.png" alt="">
+          <h2>ELEVATE</h2>
+        </div>
+        
+        <div class="close" id="close-btn">
+          <span class="material-icons-sharp">close</span>
+        </div>
+      </div>
+
+        <div class="sidebar" >
+          <a href="sales-dashboard.php">
+            <span class="material-icons-sharp">grid_view</span>
+            <h3>Dashboard</h3>
+          </a>
+
+          <a href="create-order.php" class="active">
+            <span class="material-icons-sharp">post_add</span> 
+            <h3>Create Order</h3>
+          </a>
+
+          <a href="sale-table-order.php">
+            <span class="material-icons-sharp">receipt_long</span>
+            <h3>Orders</h3>
+            <span class="message-count">26</span>
+          </a>
+
+          <a href="sales-customer.php">
+            <span class="material-icons-sharp">person_outline</span>
+            <h3>Customers</h3>
+          </a>
+
+          <a href="user-profile.php">
+            <span class="material-icons-sharp">account_circle</span>
+            <h3>Profile</h3>
+          </a>
+
+          <a href="Login.php">
+            <span class="material-icons-sharp">logout</span> 
+            <h3>Logout</h3>
+          </a>
+      </div>
+    </aside>
+  <!-- End of Aside / sidebar -->
+    <div class="right">
+      <div class="top">
+        <button id="menu-btn">
+          <span class="material-icons-sharp">menu</span>
+        </button>
+        <div class="profile">
+          <div class="info">
+            <p>Hi ,<b>Daniel</b></p>
+            <small class="text-muted">Admin</small>
+          </div>
+          <div class="profile-photo">
+            <img src="profile-1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- end of top -->
+  
+    
+
+    <!-- start of Dashboard -->
+    <main>
+
+      <section class="container-form">
+        <header>Ordering Form</header>
+        <form action="#" class="form">
+          <div class="input-box">
+            <label>First Name</label>
+            <input type="text" placeholder="Enter First Name" required />
+          </div>
+          <div class="input-box">
+            <label>Last Name</label>
+            <input type="text" placeholder="Enter Last Name" required />
+          </div>
+  
+          <div class="input-box">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter email address" required />
+          </div>
+          <div class="input-box">
+            <label>Order Product</label>
+            <input type="text" placeholder="Enter Product Order" required />
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>Phone Number</label>
+              <input type="number" placeholder="Enter phone number" required />
+            </div>
+            <div class="input-box">
+              <label>Birth Date</label>
+              <input type="date" placeholder="Enter birth date" required />
+            </div>
+          </div>
+          <div class="input-box address">
+            <label>Delivery Address</label>
+            <input type="text" placeholder="Enter street address" required />
+            <input type="text" placeholder="Enter street address line 2" required />
+            <div class="column">
+              <div class="select-box">
+                <select>
+                  <option hidden>Country</option>
+                  <option>America</option>
+                  <option>Japan</option>
+                  <option>India</option>
+                  <option>Nepal</option>
+                </select>
+              </div>
+              <input type="text" placeholder="Enter your city" required />
+            </div>
+            <div class="column">
+              <input type="text" placeholder="Enter your region" required />
+              <input type="number" placeholder="Enter postal code" required />
+            </div>
+          </div>
+          <button>Submit</button>
+        </form>
+      </section>
+
+    </main>
+
+    <!-- end of main -->
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
