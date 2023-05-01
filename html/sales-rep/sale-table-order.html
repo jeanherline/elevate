@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elevate</title>
+  <!-- google material icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="x container" id="prof">
+    <aside>
+      <div class="top">
+        <div class="logo">
+          <img src="/photos/main-logo.png" alt="">
+          <h2>ELEVATE</h2>
+        </div>
+        
+        <div class="close" id="close-btn">
+          <span class="material-icons-sharp">close</span>
+        </div>
+      </div>
+
+        <div class="sidebar" >
+          <a href="sales-dashboard.html">
+            <span class="material-icons-sharp">grid_view</span>
+            <h3>Dashboard</h3>
+          </a>
+
+          <a href="create-order.html" class="active">
+            <span class="material-icons-sharp">post_add</span> 
+            <h3>Create Order</h3>
+          </a>
+
+          <a href="sale-table-order.html">
+            <span class="material-icons-sharp">receipt_long</span>
+            <h3>Orders</h3>
+            <span class="message-count">26</span>
+          </a>
+
+          <a href="sales-customer.html">
+            <span class="material-icons-sharp">person_outline</span>
+            <h3>Customers</h3>
+          </a>
+
+          <a href="user-profile.html">
+            <span class="material-icons-sharp">account_circle</span>
+            <h3>Profile</h3>
+          </a>
+
+          <a href="/html/Login.html">
+            <span class="material-icons-sharp">logout</span> 
+            <h3>Logout</h3>
+          </a>
+      </div>
+    </aside>
+  <!-- End of Aside / sidebar -->
+    <div class="right">
+      <div class="top">
+        <button id="menu-btn">
+          <span class="material-icons-sharp">menu</span>
+        </button>
+        <div class="profile">
+          <div class="info">
+            <p>Hi ,<b>Daniel</b></p>
+            <small class="text-muted">Admin</small>
+          </div>
+          <div class="profile-photo">
+            <img src="/photos/profile-1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- end of top -->
+  
+    
+
+    <!-- start of Dashboard -->
+    <main>
+      
+      <div class="insights ins-1" >
+        <div class="sales">
+          <span class="material-icons-sharp">analytics</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Sales</h3>
+                <h1>$25,024</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx='38' cy='38' r='36'></circle>
+                </svg>
+                <div class="number">
+                  <p>81%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+        </div>
+        <!-- end of sales -->
+       
+        <!-- end of expenses -->
+
+        <div class="income">
+          <span class="material-icons-sharp">stacked_line_chart</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Income</h3>
+                <h1>$10,024</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx='38' cy='38' r='36'></circle>
+                </svg>
+                <div class="number">
+                  <p>44%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+        </div>
+        <!-- end of income -->
+      </div>
+      <!-- end of insight -->
+      
+      <div class="recent-orders">
+        <div class="search-container">
+          <div class="search-bar">
+            <input type="text"  placeholder="Search.." > 
+          </div>
+          <button>Search</button>
+        </div>
+       
+        <button class="add-em-btn">Add Customer</button>
+        <button class="add-em-btn add-2">Generate Report</button>
+
+        <div class="sort-row">
+          <label for="table_sort">Sort by:</label>
+          <select name="table_sort" id="table_sort">
+            <option value="name">Name</option>
+            <option value="row">Row</option>
+            <option value="month">Month</option>
+          </select> 
+        </div>
+        
+
+          <div class="sort-row table-row">
+            <label for="table_rows">Table Rows:</label>
+            <select name="table_rows" id="table_rows">
+              <option value="10 ">10 rows</option>
+              <option value="20">30 rows</option>
+              <option value="50">50 rows</option>
+              <option value="80">80 rows</option>
+              <option value="100">100 rows</option>
+            </select>
+          </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Product name</th>
+                <th>Product Number</th>
+                <th>Payment</th>
+                <th>Status</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Foldable Mini Drone</td>
+                <td>85612</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="Primary">Details</td>
+                <td class="Primary">
+                  <span class="material-icons-sharp">edit</span>
+                  <span class="material-icons-sharp">delete</span>
+                  <span class="material-icons-sharp">check</span>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Foldable Mini Drone</td>
+                <td>85612</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="Primary">Details</td>
+                <td class="Primary">
+                  <span class="material-icons-sharp">edit</span>
+                  <span class="material-icons-sharp">delete</span>
+                  <span class="material-icons-sharp">check</span>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Foldable Mini Drone</td>
+                <td>85612</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="Primary">Details</td>
+                <td class="Primary">
+                  <span class="material-icons-sharp">edit</span>
+                  <span class="material-icons-sharp">delete</span>
+                  <span class="material-icons-sharp">check</span>
+                </td>
+              </tr>
+  
+              <tr>
+                <td>Foldable Mini Drone</td>
+                <td>85612</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="Primary">Details</td>
+                <td class="Primary">
+                  <span class="material-icons-sharp">edit</span>
+                  <span class="material-icons-sharp">delete</span>
+                  <span class="material-icons-sharp">check</span>
+                </td>
+              </tr>
+  
+              <tr>
+                <td>Foldable Mini Drone</td>
+                <td>85612</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="Primary">Details</td>
+                <td class="Primary">
+                  <span class="material-icons-sharp">edit</span>
+                  <span class="material-icons-sharp">delete</span>
+                  <span class="material-icons-sharp">check</span>
+                </td>
+              </tr>
+  
+              <tr>
+                <td>Foldable Mini Drone</td>
+                <td>85612</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="Primary">Details</td>
+                <td class="Primary">
+                  <span class="material-icons-sharp">edit</span>
+                  <span class="material-icons-sharp">delete</span>
+                  <span class="material-icons-sharp">check</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        
+         <!-- pagination  -->
+         <nav>
+          
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+          <p class="page-p">Showing Page 10 of 20</p>
+        </nav>
+        </div>
+      </div>
+    </main>
+
+    <!-- end of main -->
+
+   
+  </div>
+
+  <script src="/javascript/index.js"></script>
+</body>
+</html>
